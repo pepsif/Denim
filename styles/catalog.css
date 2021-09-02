@@ -1,0 +1,163 @@
+body {
+    font-family: "Work Sans";
+}
+
+.header_main {
+    width: 1366;
+    height: 260px;
+    background-color: #F1F2F4;
+}
+
+.header-main-block {
+    /* width:inherit;
+height:inherit; */
+    display: flex;
+    /* justify-content:center; */
+}
+
+.header-main-nav {
+    display: flex;
+    list-style: none;
+    /* margin:20px;     */
+    font-weight: 500;
+    font-size: 18px;
+    margin: 0;
+    padding: 70px 0 0 0;
+    color: #727A82;
+}
+.header-main-nav li {
+margin-right:15px;
+
+}
+.header-main-nav li a {
+text-decoration:none;
+color:#727A82;    
+}
+.header-main-left {
+    width: 320px;
+    height: 220px;
+    padding: 0 0 0 300px;
+}
+
+.header-main-slogan {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    margin: 0;
+    padding: 40px 0 0 0;
+}
+
+.header-main-right {
+    width: 360px;
+    height: 250px;
+    display: flex;
+    position: relative;
+    margin: 0 0 0 80px;
+}
+
+.header-main-right-bottom-bg {
+    width: 178px;
+    height: 135px;
+    position: absolute;
+    left: -30px;
+    bottom: -10px;
+}
+
+.header-main-right-foto {
+    width: 300px;
+    height: 260px;
+    z-index: 1;
+}
+
+.header-main-right-top-bg {
+    width: 232px;
+    height: 176px;
+    position: absolute;
+    right: 30px;
+}
+
+.filter-by {
+    float: right;
+/*     display:block; */
+    margin: 30px 100px 0 0;
+ padding:10px;
+font-size:18px;
+width:243px;
+border:2px solid black;
+font-family:"Work Sans";    
+}
+
+/* CATALOG_CARDS */
+
+.catalog-cards {
+width:1366px;
+height:750px;
+padding-top:110px;
+
+}
+
+.catalog-card-wrapper {
+margin:0px auto;
+flex-wrap:wrap;
+width:1300px;
+height:750px;
+display:flex;
+
+}
+.card {
+width:160px;
+height:334px;
+
+margin-right:165px;
+font-weight:500;
+font-size:18px;
+}
+.catalog-image {
+width:243px;
+height:270px;
+
+}
+.card-name {
+margin:10px 0 0 0 ;
+}
+.card-price {
+margin:10px 0 0 0;
+font-weight:700;
+font-size:16px;
+}
+.catalog-slider-button-block {
+text-align:center;
+
+
+}
+.catalog-button-slider {
+font-weight:400;
+font-size:18px;
+position:relative;
+}
+.catalog-button-slider::after {
+content: "";
+width:200px;
+height:5px;
+background-color:#151C22;
+/* display:block; */
+position:absolute;
+left:585px; 
+top:25px;
+}
+
+.catalog-button {
+width:200px;
+height:64px;
+margin-top:30px;
+background-color:#151C22;
+color:white;
+font-weight:700;
+font-size:16px;
+}
+
+
+
+footer {
+    margin-top: 100px;
+}
