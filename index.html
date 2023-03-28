@@ -10,60 +10,68 @@
   </head>
   <body>
     <header>
-      <div class="container">
+      <div class="container header-container">
         <nav class="header-navigation">
           <ul class="header-navigation-list">
             <li class="header-navigation-li"><a href="#">Woman</a></li>
             <li class="header-navigation-li"><a href="#">Man</a></li>
             <li class="header-navigation-li"><a href="#">New</a></li>
           </ul>
-          <h1 class="header-navigation-caption">Nimes</h1>
-          <div class="header-navigation-search">
-            <a class="header-navigation-link-image"
-              ><img src="icons/2.png" alt="icon search"
-            /></a>
-            <a class="header-navigation-link-image"
-              ><img src="icons/Vector.png" alt="icon shop"
-            /></a>
-          </div>
         </nav>
-        <section class="header-main-section">
-          <a class="header-main-bottom-arrow"
-            ><img src="icons/3.png" alt="arrow down scroll"
+        <h1 class="header-navigation-caption">Nimes</h1>
+        <div class="header-navigation-search">
+          <a class="header-navigation-link-image"
+            ><img src="icons/2.png" alt="icon search"
           /></a>
 
-          <div class="header-main-left-side">
-            <span class="header-main-left-side-slogan"
-              >The quality you deserve</span
-            >
-            <h2 class="header-main-left-side-caption">DENIM</h2>
-            <button class="header-main-left-side-button">
-              Check new collection
-            </button>
-          </div>
-          <div class="header-main-right-side">
-            <img
-              class="header-right-top-bg"
-              src="images/bg.png"
-              alt="background image"
-            />
-            <img
-              class="header-right-main-foto"
-              alt="girl"
-              src="images/main-foto.jfif"
-            />
-            <img
-              class="header-right-bottom-bg"
-              src="images/bg.png"
-              alt="background image"
-            />
-          </div>
-        </section>
+          <a class="header-navigation-link-image"
+            ><img src="icons/Vector.png" alt="icon shop"
+          /></a>
+        </div>
       </div>
     </header>
+
+    <!-- -main-section=== -->
+
+    <section class="header-main-section">
+      <div class="container main-container">
+        <a class="header-main-bottom-arrow"
+          ><img src="icons/3.png" alt="arrow down scroll"
+        /></a>
+
+        <div class="header-main-left-side">
+          <span class="header-main-left-side-slogan"
+            >The quality you deserve</span
+          >
+          <h2 class="header-main-left-side-caption">DENIM</h2>
+          <button class="header-main-left-side-button">
+            Check new collection
+          </button>
+        </div>
+        <div class="header-main-right-side">
+          <img
+            class="header-right-top-bg"
+            src="images/bg.png"
+            alt="background image"
+          />
+          <img
+            class="header-right-main-foto"
+            alt="girl"
+            src="images/main-foto.jfif"
+          />
+          <img
+            class="header-right-bottom-bg"
+            src="images/bg.png"
+            alt="background image"
+          />
+        </div>
+      </div>
+    </section>
+
     <!--MAIN-SECTION  BESTSELLERS  -->
     <main class="main-content-section1">
-      <div class="section1-top-slogan-block">
+      <div class="container bestseller-container">
+         <div class="section1-top-slogan-block">
         <h2 class="section1-top-slogan-block-h2">Bestsellers</h2>
         <a class="section1-top-slogan-block-link">View all</a>
       </div>
@@ -91,11 +99,14 @@
           <p class="section1-card-price">$160</p>
         </div>
       </section>
+      </div>
+     
     </main>
 
     <!--SECTION2  NEWS-->
     <section class="section2">
-      <div class="section2-top-slogan-block">
+      <div class="container news-container">
+         <div class="section2-top-slogan-block">
         <h2 class="section2-top-slogan-block-h2">News</h2>
         <a class="section2-top-slogan-block-link">View all</a>
       </div>
@@ -122,6 +133,8 @@
           <button class="section2-button">Read more...</button>
         </div>
       </div>
+      </div>
+     
     </section>
 
     <!--   SECTION3-SHOP-BY-CATEGORY-->
@@ -169,6 +182,5 @@
         <img src="icons/tweet.png" alt="tweet icon" />
       </div>
     </footer>
-    
   </body>
 </html>
