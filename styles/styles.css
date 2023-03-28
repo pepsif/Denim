@@ -2,37 +2,45 @@
   font-family: "Work Sans";
   src: url(../fonts/Work_Sans/WorkSans-Medium.ttf);
 }
-
+@font-face {
+    font-family: "Work Sans Extra Bold";
+    src: url(../fonts/Work_Sans/WorkSans-ExtraBold.ttf);
+  }
 @font-face {
   font-family: "Anton-Regular";
   src: url(../fonts/Anton/Anton-Regular.ttf);
 }
 
 body {
-  margin: 0 auto;
-  padding: 0;
+ 
 }
 
 .container {
-  min-width: 1366px;
+  max-width: 1366px;
   margin: 0 auto;
 }
 header {
 }
-
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
 .header-navigation {
   display: flex;
+  padding: 26px 0;
 }
 
 .header-navigation-list {
   display: flex;
   list-style: none;
   margin-left: 90px;
-  padding: 0;
+  
   align-items: center;
 }
 
-.header-navigation li {
+.header-navigation li:not(:last-child) {
   margin-right: 42px;
   font-size: 16px;
 }
@@ -47,14 +55,15 @@ header {
 }
 
 .header-navigation-caption {
-  font-family: "Work Sans";
-  margin-left: 310px;
+  font-family: "Work Sans Extra Bold",sans-serif;
+  /* margin-left: 310px; */
   font-size: 24px;
   font-weight: 800;
+  font-style: normal;
 }
 
 .header-navigation-search {
-  margin-left: 488px;
+  margin-right: 98px;
   align-self: center;
 }
 
@@ -69,14 +78,19 @@ header {
 /* HEADER-MAIN-SECTION */
 .header-main-section {
   background-color: #f1f2f4;
-  display: flex;
+  
+ 
+}
+.main-container {
   position: relative;
+  height: 617px;
 }
 .header-main-bottom-arrow {
   position: absolute;
-  bottom: 0;
-  left: 90px;
-  bottom: 45px;
+  width: 10px;
+  height: 27px;
+  left: 98px;
+  bottom: 40px;
 }
 .header-main-bottom-arrow img {
   /*   width:10px; */
@@ -87,16 +101,17 @@ header {
 .header-main-left-side {
   width: 330px;
   height: 280px;
-  margin-left: 268px;
-  padding-top: 190px;
   display: flex;
   flex-direction: column;
+  padding: 192px 0 169px 263px;
+  
 }
 
 .header-main-left-side-slogan {
   font-size: 18px;
   font-family: "Work Sans";
   color: #727a82;
+  margin-bottom: 25px;
 }
 
 .header-main-left-side-caption {
@@ -104,8 +119,9 @@ header {
   width: 305px;
   font-weight: 400;
   margin: 0;
-  /*  padding:0; */
+  line-height: 100px;
   font-family: "Anton-Regular";
+  margin-bottom: 50px;
 }
 .header-main-left-side-button {
   width: 219px;
@@ -122,28 +138,33 @@ header {
   width: 530px;
   height: 627px;
   display: flex;
-  position: relative;
-  padding-top: 50px;
-  margin-left: 110px;
+  position: absolute;
+  top:0;
+  right: 0;
+
 }
 .header-right-top-bg {
   width: 232px;
   height: 176px;
   position: absolute;
-  left: -50px;
+  left: -150px;
   top: 0;
 }
 .header-right-main-foto {
   width: 400px;
   height: 517px;
-  z-index: 1;
+position: absolute;
+top: 50px;
+right: 220px;
+z-index: 1;
 }
 .header-right-bottom-bg {
   width: 232px;
   height: 176px;
   position: absolute;
-  bottom: 60px;
-  right: 70px;
+  bottom: 10px;
+  right: 160px;
+  
 }
 
 /* main-content-section1 */
@@ -151,9 +172,13 @@ header {
 .main-content-section1 {
 
 }
+.bestseller-container {
+  margin-top: 130px;
+}
 .section1-top-slogan-block {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 70px;
 }
 .section1-top-slogan-block-h2 {
   font-family: "Work Sans";
@@ -171,10 +196,11 @@ header {
 /* SECTION1-CARDS */
 
 .section1-cards {
-  width: 1165px;
-  height: 415px;
   display: flex;
-  margin: 0 0 0 80px;
+  justify-content: center;
+  flex-wrap: wrap;
+ 
+ 
 }
 .section1-card {
   width: 270px;
@@ -194,15 +220,17 @@ header {
   margin: 10px 0 0 0;
 }
 
-/* SECTION2 */
+/* SECTION2 NEWS*/
 .section2 {
-  width: 1366px;
-  height: 554px;
-  margin: 0 auto 0 auto;
+ 
+}
+.news-container {
+  margin-top: 108px;
 }
 .section2-top-slogan-block {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 71px;
 }
 .section2-top-slogan-block-h2 {
   font-family: "Work Sans";
