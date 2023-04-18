@@ -1,168 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/catalog.css">
-    <link rel="stylesheet" href="styles/card.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/catalog.css" />
+    <link rel="stylesheet" href="./styles/card.css" />
     <title>Denim</title>
-</head>
-<body>
-<header>
-    <nav class="header-navigation">
-        <ul class="header-navigation-list">
+  </head>
+  <body>
+    <header>
+      <div class="container header-container">
+        <nav class="header-navigation">
+          <ul class="header-navigation-list">
             <li class="header-navigation-li"><a href="#">Woman</a></li>
             <li class="header-navigation-li"><a href="#">Man</a></li>
             <li class="header-navigation-li"><a href="#">New</a></li>
-        </ul>
+          </ul>
+        </nav>
         <h1 class="header-navigation-caption">Nimes</h1>
         <div class="header-navigation-search">
-            <a class="header-navigation-link-image"><img src="icons/2.png" alt="icon search"></a>
-            <a class="header-navigation-link-image"><img src="icons/Vector.png" alt="icon shop"></a>
+          <a class="header-navigation-link-image"
+            ><img src="icons/2.png" alt="icon search"
+          /></a>
+          <a class="header-navigation-link-image"
+            ><img src="icons/Vector.png" alt="icon shop"
+          /></a>
         </div>
-    </nav>
+      </div>
+    </header>
 
     <!-- MAIN -->
 
     <main class="card-block-wrapper">
+      <div class="container card-block-wrapper-container">
         <div class="card-left-block">
-            <img class="main-card-image" src="images/55 1.jpg" alt="girl">
-            <img class="main-card-preview" src="images/56 1.jpg">
-            <img class="main-card-preview" src="images/57 1.jpg">
-            <img class="main-card-preview"  src="images/58 1.jpg">
-            <img class="main-card-preview" src="images/59 1.jpg">
-
+          <img class="main-card-image" src="images/55 1.jpg" alt="girl" />
+          <div class="preview-images-block">
+            <img class="main-card-preview" src="images/56 1.jpg" />
+          <img class="main-card-preview" src="images/57 1.jpg" />
+          <img class="main-card-preview" src="images/58 1.jpg" />
+          <img class="main-card-preview" src="images/59 1.jpg" />
+          </div>
+          
         </div>
-     <div class="card-right-block">
-        <h3 class="right-block-caption">Overalls</h3>
-        <p class="right-block-info">Overalls in washed organic cotton denim.<br> Collar,
-             button fly, and adjustable belt at waist. Chest pockets with flap. Long,
-              gently flared sleeves and straight legs with front pockets<br> and back 
-              pockets.</p>
-       <form class="color-size-form">
-            
-        <!-- COLOR -->
+        <div class="card-right-block">
+          <h3 class="right-block-caption">Overalls</h3>
+          <p class="right-block-info">
+            Overalls in washed organic cotton denim.<br />
+            Collar, button fly, and adjustable belt at waist. Chest pockets with
+            flap. Long, gently flared sleeves and straight legs with front
+            pockets<br />
+            and back pockets.
+          </p>
+          <form class="color-size-form">
+            <!-- COLOR -->
 
+            <legend class="right-block-color">Color</legend>
+            <label>
+              <input
+                class="card-color-checkbox"
+                type="radio"
+                id="card-color-lightblue"
+                name="card-order-color"
+                checked
+              />
+              <span class="fake-color-checkbox lightblue"></span>
+              <!-- <span class="color-checkbox-text">Lightblue</span> -->
+            </label>
+            <label>
+              <input
+                class="card-color-checkbox"
+                type="radio"
+                name="card-order-color"
+                id="card-color-blue"
+              />
+              <span class="fake-color-checkbox blue"></span>
+              <!-- <span class="color-checkbox-text">Blue</span> -->
+            </label>
+            <label>
+              <input
+                class="card-color-checkbox"
+                type="radio"
+                name="card-order-color"
+                id="card-color-grey"
+              />
+              <span class="fake-color-checkbox grey"></span>
+              <!-- <span class="color-checkbox-text">Grey</span> -->
+            </label>
 
-              <legend class="right-block-color">Color</legend>
-       <label>
-        <input class="card-color-checkbox" type="radio" id="card-color-lightblue" name="card-order-color" checked>
-        <span class="fake-color-checkbox lightblue"></span>
-        <!-- <span class="color-checkbox-text">Lightblue</span> -->
-        </label>
-       <label>
-         <input  class="card-color-checkbox" type="radio" name="card-order-color" id="card-color-blue">
-         <span class="fake-color-checkbox blue"></span>
-         <!-- <span class="color-checkbox-text">Blue</span> -->
+            <!-- SIZE    -->
 
-       </label>
-    <label>
-      <input  class="card-color-checkbox" type="radio" name="card-order-color" id="card-color-grey">
-      <span class="fake-color-checkbox grey"></span>
-      <!-- <span class="color-checkbox-text">Grey</span> -->
-    </label>
+            <legend class="right-block-size">Size</legend>
+            <label>
+              <input
+                class="size-input"
+                type="radio"
+                name="card-order-size"
+                id="card-size-XS"
+              />
+              <span class="fake-order-size-span"></span>
+              <span>XS</span>
+            </label>
+            <label>
+              <input type="radio" name="card-order-size" id="card-size-S" />
+              <span class="fake-order-size-span"></span>
+              <span>S</span>
+            </label>
+            <label>
+              <input type="radio" name="card-order-size" id="card-size-M" />
+              <span class="fake-order-size-span"></span>
+              <span>M</span>
+            </label>
+            <label>
+              <input type="radio" name="card-order-size" id="card-size-L" />
+              <span class="fake-order-size-span"></span>
+              <span>L</span>
+            </label>
+            <label>
+              <input type="radio" name="card-order-size" id="card-size-XL" />
+              <span class="fake-order-size-span"></span>
+              <span>XL</span>
+            </label>
+            <!-- PRICE and BUTTON -->
 
-       <!-- SIZE    -->
+            <p class="right-block-price">$160</p>
 
-<legend class="right-block-size">Size</legend>
- <label>
-  <input class="size-input" type="radio" name="card-order-size" id="card-size-XS">
-  <span class="fake-order-size-span"></span>
-  <span>XS</span>
-</label>
-<label>
-    <input type="radio" name="card-order-size"  id="card-size-S">
-    <span class="fake-order-size-span"></span>
-    <span>S</span>
-  </label>
-  <label>
-    <input type="radio" name="card-order-size"  id="card-size-M">
-    <span class="fake-order-size-span"></span>
-    <span>M</span>
-  </label>
-  <label>
-    <input type="radio" name="card-order-size"  id="card-size-L">
-    <span class="fake-order-size-span"></span>
-    <span>L</span>
-  </label>
-  <label>
-    <input type="radio" name="card-order-size"  id="card-size-XL">
-    <span class="fake-order-size-span"></span>
-    <span>XL</span>
-  </label>
-        <!-- PRICE and BUTTON -->
-    
-<p class="right-block-price">$160</p>
-
-<button type="submit" class="right-block-button">Add to cart</button>
-</form>
-</div>
- <!-- card-right-block-end -->
-    
-    <!-- MINI-GALLERY -->
-
-     </main>
-
-
-     <section class="mini-gallery">
-     <div class="gallery-caption-block">
-      <h3 class="gallery-caption">You may also like</h3>
-      <a class="gallery-viewall-link" href="#">View all</a>
+            <button type="submit" class="right-block-button">
+              Add to cart
+            </button>
+          </form>
+        </div>
       </div>
-     <div class="cards-block">
-          <!-- CARDS -->
-      <div class="gallery-card">
-        <img class="gallery-image"  src="images/64 2.jpg" alt="girl in black glasses">
-        <p class="gallery-card-name">Overalls</p>
-        <p class="gallery-card-price">$140</p>
-       </div>
-       <div class="gallery-card">
-        <img  class="gallery-image" src="images/9.jfif" alt="girl in combinezone">
-        <p class="gallery-card-name">Overalls</p>
-        <p class="gallery-card-price">$110</p>
-       </div>
-       <div class="gallery-card">
-        <img  class="gallery-image" src="images/12.jfif" alt="girl look window">
-        <p class="gallery-card-name">Jacket</p>
-        <p class="gallery-card-price">$70</p>
-       </div>
-       <div class="gallery-card">
-        <img  class="gallery-image" src="images/13.jfif" alt="girl in jacket">
-        <p class="gallery-card-name">Jacket</p>
-        <p class="gallery-card-price">$60</p>
-       </div>
-    </div>
+    </main>
 
-
-
+    <!-- MINI-GALLERY -->
+    <section class="mini-gallery">
+      <div class="container mini-gallery-container">
+         <div class="gallery-caption-block">
+        <h3 class="gallery-caption">You may also like</h3>
+        <a class="gallery-viewall-link" href="#">View all</a>
+      </div>
+      <div class="cards-block">
+        <!-- CARDS -->
+        <div class="gallery-card">
+          <img
+            class="gallery-image"
+            src="images/64 2.jpg"
+            alt="girl in black glasses"
+          />
+          <p class="gallery-card-name">Overalls</p>
+          <p class="gallery-card-price">$140</p>
+        </div>
+        <div class="gallery-card">
+          <img
+            class="gallery-image"
+            src="images/9.jfif"
+            alt="girl in combinezone"
+          />
+          <p class="gallery-card-name">Overalls</p>
+          <p class="gallery-card-price">$110</p>
+        </div>
+        <div class="gallery-card">
+          <img
+            class="gallery-image"
+            src="images/12.jfif"
+            alt="girl look window"
+          />
+          <p class="gallery-card-name">Jacket</p>
+          <p class="gallery-card-price">$70</p>
+        </div>
+        <div class="gallery-card">
+          <img
+            class="gallery-image"
+            src="images/13.jfif"
+            alt="girl in jacket"
+          />
+          <p class="gallery-card-name">Jacket</p>
+          <p class="gallery-card-price">$60</p>
+        </div>
+      </div>
+      </div>
+     
     </section>
 
-
-
-
-
-     <!--FOOTER-->
-     <footer>
-        <h2 class="footer-caption">Nimes</h2>
-        <ul class="footer-list">
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">Delivery</a></li>
-            <li><a href="#">Service</a></li>
-            <li><a href="#">Sitemap</a></li>
-            <li><a href="#">Contacts</a></li>
-        </ul>
-        <div class="footer-social-block">
-            <img src="icons/facebook.png" alt="facebook icon">
-            <img src="icons/insta.png" alt="instagram icon">
-            <img src="icons/4.png" alt="noname icon">
-            <img src="icons/tweet.png" alt="tweet icon">
-
-
-        </div>
+    <!--FOOTER-->
+    <footer>
+      <div class="container footer-container">
+         <h2 class="footer-caption">Nimes</h2>
+      <ul class="footer-list">
+        <li>Shop</li>
+        <li>Delivery</li>
+        <li>Service</li>
+        <li>Sitemap</li>
+        <li>Contacts</li>
+      </ul>
+      <div class="footer-social-block">
+        <img src="icons/facebook.png" alt="facebook icon" />
+        <img src="icons/insta.png" alt="instagram icon" />
+        <img src="icons/4.png" alt="noname icon" />
+        <img src="icons/tweet.png" alt="tweet icon" />
+      </div>
+      </div>
+     
     </footer>
-
-
-</body>
+  </body>
 </html>
