@@ -1,127 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/catalog.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/catalog.css" />
     <title>Denim</title>
-</head>
-<body>
-<header>
-    <nav class="header-navigation">
-        <ul class="header-navigation-list">
+  </head>
+  <body>
+    <header>
+      <div class="container header-container">
+        <nav class="header-navigation">
+          <ul class="header-navigation-list">
             <li class="header-navigation-li"><a href="#">Woman</a></li>
             <li class="header-navigation-li"><a href="#">Man</a></li>
             <li class="header-navigation-li"><a href="#">New</a></li>
-        </ul>
+          </ul>
+        </nav>
         <h1 class="header-navigation-caption">Nimes</h1>
         <div class="header-navigation-search">
-            <a class="header-navigation-link-image"><img src="icons/2.png" alt="icon search"></a>
-            <a class="header-navigation-link-image"><img src="icons/Vector.png" alt="icon shop"></a>
+          <a class="header-navigation-link-image"
+            ><img src="icons/2.png" alt="icon search"
+          /></a>
+          <a class="header-navigation-link-image"
+            ><img src="icons/Vector.png" alt="icon shop"
+          /></a>
         </div>
-    </nav>
-<!-- HEADER-MAIN -->
-<section class="header_main">
- <div class="header-main-block">
-   <div class="header-main-left">
-     <Ul class="header-main-nav">
-       <li class="header-main-nav-link"><a href="#"> All categories</a></li>
-       /
-       <li class="header-main-nav-link"><a href="#">Woman</a></li>
-       /
-       <li class="header-main-nav-link"><a href="#">Jackets</a></li>
-   </Ul>
-     <p class="header-main-slogan">Denim Collection<br>Fall 2019</p>
- </div>
-<div class="header-main-right">
- <img class="header-main-right-bottom-bg" src="images/bg.png">
- <img class="header-main-right-foto" src="images/10.jfif">
- <img class="header-main-right-top-bg" src="images/bg2.png">
-</div>
- </div>
-</section>
+      </div>
+    </header>
+    <!-- HEADER-MAIN -->
+    <section class="header-main">
+      <div class="container header-main-container">
+        <div class="header-main-block">
+          <div class="header-main-left">
+            <ul class="header-main-nav">
+              <li class="header-main-nav-link">
+                <a href="#"> All categories</a>
+              </li>
+              /
+              <li class="header-main-nav-link"><a href="#">Woman</a></li>
+              /
+              <li class="header-main-nav-link"><a href="#">Jackets</a></li>
+            </ul>
+            <p class="header-main-slogan">Denim Collection<br />Fall 2019</p>
+          </div>
+          <div class="header-main-right">
+            <img class="header-main-right-bottom-bg" src="images/bg.png" />
+            <img class="header-main-right-foto" src="images/10.jfif" />
+            <img class="header-main-right-top-bg" src="images/bg2.png" />
+          </div>
+        </div>
+      </div>
+    </section>
 
-<select class="filter-by" selected="filter by">
- <option>Filter by</option>
+    <!-- --select-section-- -->
+    <section class="select-section">
+      <div class="container select-container">
+        <select class="filter-by" selected="filter by">
+          <option>Filter by</option>
+        </select>
+      </div>
+    </section>
 
-</select>
-<!-- CARD-SECTION -->
-<section class="catalog-cards">
- <div class="catalog-card-wrapper">
-  <div class="card">
-    <img class="catalog-image" src="images/11.jfif">
-    <p class="card-name">Jacket</p>
-    <p class="card-price">$40</p>
-   </div>
-   <div class="card">
-    <img class="catalog-image" src="images/12.jfif">
-    <p class="card-name">Jacket</p>
-    <p class="card-price">$70</p>
-   </div>
-   <div class="card">
-    <img class="catalog-image" src="images/13.jfif">
-    <p class="card-name">Jacket</p>
-    <p class="card-price">$60</p>
-   </div>
-   <div class="card">
-    <img class="catalog-image" src="images/14.jfif">
-    <p class="card-name">Jacket</p>
-    <p class="card-price">$50</p>
-   </div>
-   <div class="card">
-    <img class="catalog-image" src="images/15.jfif">
-    <p class="card-name">Jacket</p>
-    <p class="card-price">$40</p>
-   </div>
-   <div class="card">
-    <img class="catalog-image" src="images/18.jfif">
-    <p class="card-name">Jacket</p>
-    <p class="card-price">$110</p>
-   </div>
-   <div class="card">
-    <img class="catalog-image" src="images/16.jfif">
-    <p class="card-name">Jacket</p>
-    <p class="card-price">$35</p>
-   </div>
-   <div class="card">
-    <img class="catalog-image" src="images/17.jfif">
-    <p class="card-name">Jacket</p>
-    <p class="card-price">$85</p>
-   </div>
- </div>
-</section>
+    <!-- CARD-SECTION -->
+    <section class="catalog-cards">
+      <div class="container catalog-card-container">
+        <div class="card">
+          <img class="catalog-image" src="images/11.jfif" />
+          <p class="card-name">Jacket</p>
+          <p class="card-price">$40</p>
+        </div>
+        <div class="card">
+          <img class="catalog-image" src="images/12.jfif" />
+          <p class="card-name">Jacket</p>
+          <p class="card-price">$70</p>
+        </div>
+        <div class="card">
+          <img class="catalog-image" src="images/13.jfif" />
+          <p class="card-name">Jacket</p>
+          <p class="card-price">$60</p>
+        </div>
+        <div class="card">
+          <img class="catalog-image" src="images/14.jfif" />
+          <p class="card-name">Jacket</p>
+          <p class="card-price">$50</p>
+        </div>
+        <div class="card">
+          <img class="catalog-image" src="images/15.jfif" />
+          <p class="card-name">Jacket</p>
+          <p class="card-price">$40</p>
+        </div>
+        <div class="card">
+          <img class="catalog-image" src="images/18.jfif" />
+          <p class="card-name">Jacket</p>
+          <p class="card-price">$110</p>
+        </div>
+        <div class="card">
+          <img class="catalog-image" src="images/16.jfif" />
+          <p class="card-name">Jacket</p>
+          <p class="card-price">$35</p>
+        </div>
+        <div class="card">
+          <img class="catalog-image" src="images/17.jfif" />
+          <p class="card-name">Jacket</p>
+          <p class="card-price">$85</p>
+        </div>
+      </div>
+    </section>
 
-
-<div class="catalog-slider-button-block">
-  <p class="catalog-button-slider">Showing <span>9</span> of <span>45</span> items</p>
-  <button class="catalog-button">Load more</button>
-
-</div>
-
-
+    <div class="catalog-slider-button-block">
+      <div class="container catalog-slider-button-block-container">
+        <p class="catalog-button-slider"> Showing 9 of 45 items </p>
+      <button class="catalog-button">Load more</button>
+      </div>
+      
+    </div>
 
     <!--FOOTER-->
     <footer>
-        <h2 class="footer-caption">Nimes</h2>
-        <ul class="footer-list">
-            <li>Shop</li>
-            <li>Delivery</li>
-            <li>Service</li>
-            <li>Sitemap</li>
-            <li>Contacts</li>
-        </ul>
-        <div class="footer-social-block">
-            <img src="icons/facebook.png" alt="facebook icon">
-            <img src="icons/insta.png" alt="instagram icon">
-            <img src="icons/4.png" alt="noname icon">
-            <img src="icons/tweet.png" alt="tweet icon">
-
-
-        </div>
+      <div class="container footer-container">
+         <h2 class="footer-caption">Nimes</h2>
+      <ul class="footer-list">
+        <li>Shop</li>
+        <li>Delivery</li>
+        <li>Service</li>
+        <li>Sitemap</li>
+        <li>Contacts</li>
+      </ul>
+      <div class="footer-social-block">
+        <img src="icons/facebook.png" alt="facebook icon" />
+        <img src="icons/insta.png" alt="instagram icon" />
+        <img src="icons/4.png" alt="noname icon" />
+        <img src="icons/tweet.png" alt="tweet icon" />
+      </div>
+      </div>
+     
     </footer>
-
-
-</body>
+  </body>
 </html>
